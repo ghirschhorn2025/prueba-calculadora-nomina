@@ -1,0 +1,66 @@
+body {
+  background-image: url('representacion-elegante-del-diseno-interior.jpg');
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh;
+  margin: 0;
+}
+
+.navbar-brand {
+  font-family: Special Gothic Expanded One;
+}
+
+#navbarNav {
+  font-family: Comfortaa;
+}
+
+#welcomeBox {
+  margin-top: 70px;
+  background: rgba(230, 229, 229, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.4px);
+  -webkit-backdrop-filter: blur(10.4px);
+  border: 1px solid rgba(230, 229, 229, 0.36);
+}
+
+#welcomeBox h1 {
+  font-family: Comfortaa;
+  color: aliceblue;
+  font-size: 80px;
+}
+
+button.custom-dropdown-btn {
+  padding: 10px 20px;
+  color: gray;
+  font-family: Comfortaa;
+  background: rgba(230, 229, 229, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.2px);
+  -webkit-backdrop-filter: blur(14.2px);
+  border: 1px solid rgba(230, 229, 229, 0.11);
+}
+
+button.custom-btn-start {
+  padding: 10px 20px;
+  font-family: Comfortaa;
+  background: rgba(33, 195, 30, 0.58);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+  border: 1px solid rgba(33, 195, 30, 0.36);
+}
+
+ul.custom-dropdown-menu {
+  padding: 10px 20px;
+  font-family: Comfortaa;
+  background: rgba(230, 229, 229, 0.33);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(14.2px);
+  -webkit-backdrop-filter: blur(14.2px);
+  border: 1px solid rgba(230, 229, 229, 0.11);
+}
