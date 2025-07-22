@@ -16,7 +16,7 @@ body {
 }
 
 #welcomeBox {
-  margin-top: 70px;
+  margin-top: 100px;
   background: rgba(230, 229, 229, 0.07);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -29,6 +29,7 @@ body {
   font-family: Comfortaa;
   color: aliceblue;
   font-size: 80px;
+  margin-bottom: 50px;
 }
 
 button.custom-dropdown-btn {
@@ -44,9 +45,9 @@ button.custom-dropdown-btn {
 }
 
 button.custom-btn-start {
-  padding: 10px 20px;
+  padding: 15px 70px;
   font-family: Comfortaa;
-  background: rgba(33, 195, 30, 0.58);
+  background: rgba(77, 158, 76, 0.58);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(7px);
