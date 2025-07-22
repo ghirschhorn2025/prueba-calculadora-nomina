@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora Nóminas</title>
+    <title>RYR Payslip Calculator</title>
     <link rel="stylesheet" href="style.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
@@ -12,58 +12,112 @@
 
 <body>
     <div class="container">
-
         <div class="row">
-            <div class="col 6 text-center mt-5">
-                <h1>Calculadora Nóminas</h1>
-                <p>Calcular una previsión de tu próxima nómina De Ryanair DAC - España.</p>
+            <div class="col 6 text-center mt-3">
+                <h1>Payslip Calculator</h1>
+                <p>Calculate an aproximation of your next payslip for Ryanair DAC - España.</p>
             </div>
         </div>
 
-        <div class="row justify-content-center g-2">
-            <div class="col-lg-4 col-md-5 mt-4">
-                <form id="mainForm">
-                    <div class="mb-3">
-                        <label for="inputBasico" class="form-label">BASICO</label>
-                        <input type="number" class="form-control" id="inputBasico" placeholder="Introduce básico según nivel"
-                            step="0.01">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputUnimed" class="form-label">UNIMED</label>
-                        <input type="number" class="form-control" id="inputUnimed" step="0.01">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputHours" class="form-label">HORAS</label>
-                        <input type="number" class="form-control" id="inputHours" placeholder="Cantidad horas * 60">
-                    </div>
-                    <div class="mb-3">
-                        <label for="inputMinutes" class="form-label">MINUTOS</label>
-                        <input type="number" class="form-control" id="inputMinutes" min="0" max="59">
-                    </div>
+        <div class="row">
+            <div class="col-md-10 mx-auto text-center">
+                <div class="btn-group mt-1">
+                    <button type="button" class="btn btn-secondary">Choose your rank</button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">PU</a></li>
+                        <li><a class="dropdown-item" href="#">JU</a></li>
+                        <li><a class="dropdown-item" href="#">JU PU</a></li>
+                        <li><a class="dropdown-item" href="#">JU AH</a></li>
+                    </ul>
+                </div>
+
+                <div class="btn-group mt-1">
+                    <button type="button" class="btn btn-secondary">Choose your level</button>
+                    <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        <span class="visually-hidden">Toggle Dropdown</span>
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="#">1</a></li>
+                        <li><a class="dropdown-item" href="#">2</a></li>
+                        <li><a class="dropdown-item" href="#">3</a></li>
+                        <li><a class="dropdown-item" href="#">4</a></li>
+                        <li><a class="dropdown-item" href="#">5</a></li>
+                    </ul>
+                </div>
+
+                <button type="button" class="btn btn-success mt-1">Go!</button>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3 mt-4 mb-3 ms-5 text-center">
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="basic">€</span>
+                    <input type="number" class="form-control" placeholder="Basic" aria-label="basic"
+                        aria-describedby="visible-addon">
+                    <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input"
+                        aria-describedby="visible-addon">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="unimed">€</span>
+                    <input type="number" class="form-control" placeholder="UNIMED" aria-label="unimed"
+                        aria-describedby="visible-addon">
+                    <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input"
+                        aria-describedby="visible-addon">
+                </div>
+
+                <div class="input-group mb-3">
+                    <span class="input-group-text" id="allowence">€</span>
+                    <input type="number" class="form-control" placeholder="Allowence" aria-label="allowence"
+                        aria-describedby="visible-addon">
+                    <input type="text" class="form-control d-none" placeholder="Hidden input" aria-label="Hidden input"
+                        aria-describedby="visible-addon">
+                </div>
+
+                <div class="input-group mb-3" id="hours">
+                    <input type="number" class="form-control text-center" placeholder="Hours" min="0" max="60"
+                        aria-label="Hours">
+                    <span class="input-group-text">:</span>
+                    <input type="number" class="form-control text-center" placeholder="Minutes" min="0" max="59"
+                        aria-label="Minutes">
+                </div>
+
+                <div class="col mb-3">
+                    <input type="number" class="form-control" placeholder="How many VTOs?" aria-label="vtos">
+                </div>
+
+                <div class="col mb-3">
+                    <input type="number" class="form-control" placeholder="Annual Leave" aria-label="annual leave">
+                </div>
+
+                <div class="col mb-3">
+                    <input type="number" class="form-control" placeholder="Bank Holidays" aria-label="bank holidays">
+                </div>
+
+                <div class="col mb-3">
+                    <input type="number" class="form-control" placeholder="Training days" aria-label="training">
+                </div>
+
+                <div class="col mb-3">
+                    <input type="number" class="form-control" placeholder="Overnights" aria-label="overnights">
+                </div>
+
+                <div class="col">
+                    <button type="button" class="btn btn-warning w-100">Calculate</button>
+                </div>
+
             </div>
 
-            <div class="col-lg-4 col-md-5 mt-4">
-                <div class="mb-3">
-                    <label for="inputBonus" class="form-label">SALES BONUS</label>
-                    <input type="number" class="form-control" id="inputBonus" placeholder="Introduce promedio"
-                        step="0.01">
-                </div>
-                <div class="mb-3">
-                    <label for="inputAnnual" class="form-label">VACACIONES</label>
-                    <input type="number" class="form-control" id="inputAnnual" placeholder="Cantidad días.">
-                </div>
-                <div class="mb-3">
-                    <label for="inputTraining" class="form-label">TRAINING</label>
-                    <input type="number" class="form-control" id="inputTraining" placeholder="Cantidad días.">
-                </div>
-                <div class="mb-3">
-                    <label for="inputVto" class="form-label">VTOs</label>
-                    <input type="number" class="form-control" id="inputVto" placeholder="Cantidad días.">
-                </div>
-
-                <button type="submit" class="btn btn-primary text-center">Submit</button>
-
-                </form>
+            <div class="col-md-5 mt-4 mb-3 border rounded-2 py-2" id="result-box">
+                <p class="fw-lighter">Results will be shown here.<br>
+                Remember this calculation is only illustrative and orientative.<br>
+                This was made by colleagues, for colleagues.</p>
             </div>
         </div>
 
