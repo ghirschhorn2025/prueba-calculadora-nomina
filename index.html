@@ -39,37 +39,50 @@
 
     <div class="container">
         <div class="row">
-            <div class="col-md-5 border mx-auto text-center p-5" id="welcomeBox">
+            <div class="col-md-6 border" id="welcomeBox">
                 <h1>Welcome!</h1>
-                <div class="dropdown mt-4">
-                    <button class="btn btn-secondary dropdown-toggle custom-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Choose your rank
-                    </button>
-                    <ul class="dropdown-menu custom-dropdown-menu">
-                        <li><a class="dropdown-item" href="#">PU</a></li>
-                        <li><a class="dropdown-item" href="#">JU</a></li>
-                        <li><a class="dropdown-item" href="#">JU PU</a></li>
-                        <li><a class="dropdown-item" href="#">JU AH</a></li>
-                    </ul>
+                <div class="d-flex">
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle custom-dropdown-btn" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose your rank
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu">
+                            <li><a class="dropdown-item" href="#">PU</a></li>
+                            <li><a class="dropdown-item" href="#">JU</a></li>
+                            <li><a class="dropdown-item" href="#">JU PU</a></li>
+                            <li><a class="dropdown-item" href="#">JU AH</a></li>
+                        </ul>
+                    </div>
+                    <div class="dropdown">
+                        <button class="btn btn-secondary dropdown-toggle custom-dropdown-btn" type="button"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            Choose your level
+                        </button>
+                        <ul class="dropdown-menu custom-dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Level 1</a></li>
+                            <li><a class="dropdown-item" href="#">Level 2</a></li>
+                            <li><a class="dropdown-item" href="#">Level 3</a></li>
+                            <li><a class="dropdown-item" href="#">Level 4</a></li>
+                            <li><a class="dropdown-item" href="#">Level 5</a></li>
+                        </ul>
+                    </div>
                 </div>
-                <div class="dropdown mt-4">
-                    <button class="btn btn-secondary dropdown-toggle custom-dropdown-btn" type="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        Choose your level
-                    </button>
-                    <ul class="dropdown-menu custom-dropdown-menu">
-                        <li><a class="dropdown-item" href="#">Level 1</a></li>
-                        <li><a class="dropdown-item" href="#">Level 2</a></li>
-                        <li><a class="dropdown-item" href="#">Level 3</a></li>
-                        <li><a class="dropdown-item" href="#">Level 4</a></li>
-                        <li><a class="dropdown-item" href="#">Level 5</a></li>
-                    </ul>
-                </div>
-                <div class="col-md-5 mx-auto my-5">
+
+                <div class="start-btn-container my-4">
                     <button type="button" class="btn btn-success custom-btn-start">Start</button>
                 </div>
             </div>
+        </div>
+
+        <div class="col-md-6 mt-3 p-3" id="itemsBox">
+
+            <div class="infoPills">
+                <span class="badge rounded-pill text-bg-info" id="rankPill">PU</span>
+                <span class="badge rounded-pill text-bg-info" id="levelPill">Level 1</span>
+            </div>
+
+            
 
 
         </div>

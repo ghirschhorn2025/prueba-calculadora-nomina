@@ -16,7 +16,11 @@ body {
 }
 
 #welcomeBox {
-  margin-top: 100px;
+  margin-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   background: rgba(230, 229, 229, 0.07);
   border-radius: 16px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
@@ -27,17 +31,23 @@ body {
 
 #welcomeBox h1 {
   font-family: Comfortaa;
+  font-size: 50px;
   color: aliceblue;
-  font-size: 80px;
-  margin-bottom: 50px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.d-flex {
+  gap: 15px;
+  justify-content: center;
 }
 
 button.custom-dropdown-btn {
-  padding: 10px 20px;
-  color: gray;
+  padding: 8px 17px;
+  color: lightgray;
   font-family: Comfortaa;
   background: rgba(230, 229, 229, 0.33);
-  border-radius: 16px;
+  border-radius: 10px;
   box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
   backdrop-filter: blur(14.2px);
   -webkit-backdrop-filter: blur(14.2px);
@@ -45,7 +55,7 @@ button.custom-dropdown-btn {
 }
 
 button.custom-btn-start {
-  padding: 15px 70px;
+  padding: 9px 50px;
   font-family: Comfortaa;
   background: rgba(77, 158, 76, 0.58);
   border-radius: 16px;
@@ -65,3 +75,19 @@ ul.custom-dropdown-menu {
   -webkit-backdrop-filter: blur(14.2px);
   border: 1px solid rgba(230, 229, 229, 0.11);
 }
+
+start-btn-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#itemsBox {
+  background: rgba(230, 229, 229, 0.07);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(10.4px);
+  -webkit-backdrop-filter: blur(10.4px);
+  border: 1px solid rgba(230, 229, 229, 0.36);
+}
+
